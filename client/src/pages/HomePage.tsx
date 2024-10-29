@@ -34,27 +34,27 @@ export default function HomePage() {
 
   return (
     <div className="pt-32 flex flex-col items-center justify-center text-center">
-      {carQuery.isFetching ? (
-        <div className="pb-12">Loading...</div>
-      ) : (
-        <>
           <h1 className="text-[clamp(1.75rem,4vw,2.5rem)] font-bold">Selamat Datang di Rental Mobil Kami</h1>
           <FilterSort onSetFilter={setFilters}/>
-          {carData.length === 0 ? (
-              <div className="text-red-700 py-12">Tidak ada mobil yang available</div>
+          {carQuery.isFetching ? (
+            <div className="py-20">Loading...</div>
             ) : (
-              <div className="mt-10 grid grid-cols-3 gap-10 max-md:gap-5 max-sm:gap-3 max-w-[97.5%]">
-                  {currentCars.map((car) => (
-                    <Card key={car.Car_id} car={car} />
-                  ))}
-              </div>
-            )
-          } 
+              <>
+              {carData.length === 0 ? (
+                  <div className="text-red-700 py-20">Tidak ada mobil yang available</div>
+                ) : (
+                  <div className="mt-10 grid grid-cols-3 gap-10 max-md:gap-5 max-sm:gap-3 max-w-[97.5%]">
+                      {currentCars.map((car) => (
+                        <Card key={car.Car_id} car={car} />
+                      ))}
+                  </div>
+                )
+              } 
+              </>
+            )}
           {totalPages > 1 && (
             <Pagination totalPages={totalPages} currentPage={currentPage} handlePageChange={handlePageChange} />
           )}
-        </>
-      )}
     </div>
   );
 }
