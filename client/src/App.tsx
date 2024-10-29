@@ -29,7 +29,7 @@ const router = createBrowserRouter([
             element: <HomePage />,
           },
           {
-            path: 'rent/:car_id',
+            path: 'rent/:id',
             element: <Rent/>
           },
           {

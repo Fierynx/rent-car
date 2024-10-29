@@ -77,3 +77,17 @@ export type Car = {
   rentals?: Rental[];
   maintenances?: Maintenance[];
 };
+
+export type CarInfo = {
+  model: string;
+  name: string;
+  transmission?: string;
+  customer?: string;
+  email: string;
+  rental_date?: string;
+  return_date?: string;
+  number_of_car_seats?: number;
+  price_per_day?: number;
+  total_price?: number;
+  car_images_link?: string[];
+}
