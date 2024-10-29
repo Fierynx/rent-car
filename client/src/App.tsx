@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Rent from "./pages/Rent";
 import RentHistory from "./pages/RentHistory";
+import AuthLayout from "./pages/AuthLayout";
 
 const router = createBrowserRouter([
   {
@@ -28,20 +29,26 @@ const router = createBrowserRouter([
             element: <HomePage />,
           },
           {
-            path: 'login',
-            element: <Login/>
-          },
-          {
-            path: 'register',
-            element: <Register/>
-          },
-          {
             path: 'rent/:car_id',
             element: <Rent/>
           },
           {
             path: 'rent-history',
             element: <RentHistory/>
+          },
+        ]
+      },
+      {
+        path: 'auth',
+        element: <AuthLayout/>,
+        children: [
+          {
+            path: 'login',
+            element: <Login/>
+          },
+          {
+            path: 'register',
+            element: <Register/>
           },
         ]
       }

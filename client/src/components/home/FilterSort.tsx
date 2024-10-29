@@ -27,6 +27,10 @@ export default function FilterSort({ onSetFilter }: Props) {
       ...filters,
       [name]: value,
     };
+
+    if(name === "sort_by"){
+      onSetFilter({...newFilters, [name]: value});
+    }
     setFilters(newFilters);
   };
 

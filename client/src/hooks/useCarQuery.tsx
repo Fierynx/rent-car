@@ -33,7 +33,6 @@ export default function useCarQuery(filters?: CarFilter){
     return serializedFilter === "?" ? "" : serializedFilter;
   };
 
-  //problem, kerefresh setiap kali ngehit filter
   console.log(serializeFilterSort(filters));
 
 

@@ -72,3 +72,6 @@ C:\Users\Ryu Orlando Tamin\Web Projects\ASP.NET Projects\amjs2025\server\bin\Deb
 C:\Users\Ryu Orlando Tamin\Web Projects\ASP.NET Projects\amjs2025\server\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\Ryu Orlando Tamin\Web Projects\ASP.NET Projects\amjs2025\server\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\Ryu Orlando Tamin\Web Projects\ASP.NET Projects\amjs2025\server\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\Ryu Orlando Tamin\Web Projects\ASP.NET Projects\amjs2025\server\bin\Debug\net6.0\BCrypt.Net-Next.dll
+C:\Users\Ryu Orlando Tamin\Web Projects\ASP.NET Projects\amjs2025\server\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Ryu Orlando Tamin\Web Projects\ASP.NET Projects\amjs2025\server\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
