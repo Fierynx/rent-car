@@ -36,7 +36,7 @@ const router = createBrowserRouter([
             element: <Register/>
           },
           {
-            path: 'rent',
+            path: 'rent/:car_id',
             element: <Rent/>
           },
           {

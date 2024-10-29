@@ -5,7 +5,7 @@ namespace server.Controllers.V1
 {
     [Route("api/v1/[controller]")]
     [ApiController]
-    public class RentController : ControllerBase
+    public class AuthController : ControllerBase
     {
     }
 }

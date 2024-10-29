@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
 import Footer from "../components/general/Footer";
-import Header from "../components/general/Header";
+import Navbar from "../components/general/Navbar";
 
 export default function AppLayout() {
   return (
-    <div>
-      <Header/>
+    <div className="bg-primary-pink text-primary">
+      <Navbar/>
       <Outlet/>
       <Footer/>
     </div>
